@@ -1,0 +1,23 @@
+{
+  "name": "amkit",
+  "version": "1.0.0",
+  "devDependencies": {
+    "grunt": "0.4.0",
+    "grunt-cmd-concat": "0.2.5",
+    "grunt-cmd-transport": "0.2.9",
+    "grunt-contrib-clean": "0.5.0",
+    "grunt-contrib-uglify": "0.2.2",
+    "grunt-contrib-cssmin": "0.6.1",
+    "grunt-contrib-copy": "0.4.1",
+    "grunt-contrib-watch": "0.5.3",
+    "extend": "1.2.0"
+  },
+  "spm": {
+    "alias": {
+      "jquery": "jquery/jquery/1.7.2/jquery",
+      "seajs": "seajs/seajs/2.1.0/sea",
+      "handlerbar": "gallery/handlebars/1.0.2/runtime",
+      "seajs-style": "seajs/seajs-style/1.0.0/seajs-style"
+    }
+  }
+}
