@@ -15,7 +15,7 @@ module.exports = function(grunt, cwd) {
 	var style = transport.style.init(grunt);
 	var template = transport.template.init(grunt);
 
-	var deployDir = process.env.AMKIT_DEPLOY_HOME || "../assert/amkit2";
+	var deployDir = process.env.AMKIT_DEPLOY_HOME || "../../assert/amkit2";
 
 	return extend(baseConfig, {
 		pkg: pkg,
