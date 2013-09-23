@@ -15,6 +15,8 @@ module.exports = function(grunt, cwd) {
 	var style = transport.style.init(grunt);
 	var template = transport.template.init(grunt);
 
+	var deployDir = process.env.AMKIT_DEPLOY_HOME || "../assert/amkit2";
+
 	return extend(baseConfig, {
 		pkg: pkg,
 		copy: {
@@ -29,7 +31,7 @@ module.exports = function(grunt, cwd) {
 				cwd: path.join("sea-modules", cwd, '<%= pkg.version %>/'),
 				//src: ['**/*', '!**/*-debug.*'],
 				src: ['**/*'],
-				dest: path.join(process.env.AMKIT_DEPLOY_HOME, "sea-modules", cwd, '<%= pkg.version %>/')
+				dest: path.join(deployDir, "sea-modules", cwd, '<%= pkg.version %>/')
 			}
 		},
 		clean: {
@@ -39,7 +41,7 @@ module.exports = function(grunt, cwd) {
 				options: {
 					force: true
 				},
-				src: [path.join(process.env.AMKIT_DEPLOY_HOME, "sea-modules", cwd, "<%= pkg.version %>")]
+				src: [path.join(deployDir, "sea-modules", cwd, "<%= pkg.version %>")]
 			}
 		},
 		install: {
@@ -47,7 +49,7 @@ module.exports = function(grunt, cwd) {
 				output: ""
 			},
 			deploy: {
-				output: path.join(process.env.AMKIT_DEPLOY_HOME, "sea-modules")
+				output: path.join(deployDir, "sea-modules")
 			}
 		},
 		transport: {
