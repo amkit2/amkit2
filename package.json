@@ -17,7 +17,8 @@
       "jquery": "jquery/jquery/1.7.2/jquery",
       "seajs": "seajs/seajs/2.1.0/sea",
       "handlerbar": "gallery/handlebars/1.0.2/runtime",
-      "seajs-style": "seajs/seajs-style/1.0.0/seajs-style"
+      "seajs-style": "seajs/seajs-style/1.0.1/seajs-style",
+      "seajs-text": "seajs/seajs-text/1.0.3/seajs-text"
     }
   }
 }
