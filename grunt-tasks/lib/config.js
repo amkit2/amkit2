@@ -46,7 +46,7 @@ module.exports = function(grunt, cwd) {
 		},
 		install: {
 			target: {
-				output: ""
+				output: "."
 			},
 			deploy: {
 				output: path.join(deployDir, "sea-modules")
